@@ -52,7 +52,7 @@ body {
 }
 .input_fluid {max-width: 91%;width: 91%;}
 .input_fluid_half {max-width: 50%;width: 50%;}
-.captcha { margin: 0 auto 0 8px; padding: 0; vertical-align: middle; -webkit-border-radius: 8px;
+.captcha { margin: 0 auto 0 4px; padding: 0; vertical-align: middle; -webkit-border-radius: 8px;
    -moz-border-radius: 8px;
    border-radius: 8px;
    border: none;
@@ -574,10 +574,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
 #contactForm input[type=submit] {
    margin: 0;
    width: 100%;
-}
-img.captcha {
-	margin: 0 auto;
-	padding: 0
 }
 /* FOOTER
 ----------------------------------------------------------------------------------------------*/
