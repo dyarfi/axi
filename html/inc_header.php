@@ -1,5 +1,5 @@
 <?php 
-$url = $_SERVER['SERVER_NAME'] . "/axi/html/";
+$url = $_SERVER['SERVER_NAME'] . "/axi/";
 ?>
 <!DOCTYPE html>
 <html>
@@ -27,7 +27,9 @@ $url = $_SERVER['SERVER_NAME'] . "/axi/html/";
       <link rel="stylesheet" type="text/css" href="http://<?php echo $url;?>css/owl.carousel.css"/>
       <link rel="stylesheet" type="text/css" href="http://<?php echo $url;?>css/animate.css"/>
       <link rel="stylesheet" type="text/css" href="http://<?php echo $url;?>css/jquery.alert.css"/>
-      <link rel="shorchut icon" type="images/x-icon" href="http://<?php echo $url;?>favicon.ico"/>
+      <link rel="shorchut icon" type="images/x-icon" href="http://<?php echo $url;?>axi/favicon.png"/>
+	  <!--<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">-->
       
    </head>
    <body>

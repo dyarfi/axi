@@ -13,7 +13,7 @@ include 'inc_header.php';
          <ul class="axi_caption">
             <li>
                <div class="caption_1 wow flipInXTwice animated" data-wow-duration="1s" data-wow-delay="1.5s" data-wow-iteration="2" data-scroll-reveal="enter after .5s">The Preferred Partner</div>
-               <div class="caption_2 wow fadeInUp flipInXTwice animated" data-wow-duration="1s" data-wow-delay="2s" data-wow-iteration="2" data-scroll-reveal="enter after .7s">in Office Services</div>
+               <div class="caption_2 wow flipInXTwice animated" data-wow-duration="1s" data-wow-delay="2s" data-wow-iteration="2" data-scroll-reveal="enter after .7s">in Office Services</div>
             </li>
             <li>
                <div class="caption_1 wow flipInXTwice animated">Title 2</div>
@@ -128,15 +128,15 @@ include 'inc_header.php';
                   <img src="http://<?php echo $url; ?>images/content/logo2.png" alt=""/>
                </div>
                <div class="section_content">
-               <h2 class="general_title line_2 wow pulse animated" data-wow-offset="200">Xprins</h2>
+                  <h2 class="general_title line_2 wow pulse animated" data-wow-offset="200">Xprins</h2>
                   <div class="intro wow slideInLeft animated" data-wow-offset="200">
-                  <p>&ldquo;Xprins adalah unit bisnis PT Astragraphia Xprins Indonesia yang menangani outsourcing pencetakan dokumen, khususnya transactional/ variable data printing. 
-                     Sebagai pelopor dan pemimpin dalam industri outsourcing pencetakan dokumen yang berdiri sejak 19 Februari 1993, Xprins sudah banyak melayani perusahaan terkemuka 
-                     di Indonesia dalam pencetakan dokumen billing dan rekening hingga penanganan distribusinya. Didukung oleh perangkat terkini dari partner terkemuka Fuji Xerox 
-                     dan Pitney Bowes, bisnis proses dan alur pelayanan yang terstandarisasi serta jaminan keamanan data.&rdquo;
-                     Layanan Xprins : Digital Intelligent Printing (Variable Data Printing), Print on Demand, Personalization Printing, 
-                     Design & Creative Services, Imaging Scanning, Printing material.</p>
-               </div>
+                     <p>&ldquo;Xprins adalah unit bisnis PT Astragraphia Xprins Indonesia yang menangani outsourcing pencetakan dokumen, khususnya transactional/ variable data printing. 
+                        Sebagai pelopor dan pemimpin dalam industri outsourcing pencetakan dokumen yang berdiri sejak 19 Februari 1993, Xprins sudah banyak melayani perusahaan terkemuka 
+                        di Indonesia dalam pencetakan dokumen billing dan rekening hingga penanganan distribusinya. Didukung oleh perangkat terkini dari partner terkemuka Fuji Xerox 
+                        dan Pitney Bowes, bisnis proses dan alur pelayanan yang terstandarisasi serta jaminan keamanan data.&rdquo;
+                        Layanan Xprins : Digital Intelligent Printing (Variable Data Printing), Print on Demand, Personalization Printing, 
+                        Design & Creative Services, Imaging Scanning, Printing material.</p>
+                  </div>
                </div>
                <a class="more_1 wow zoomInUp animated" data-wow-offset="100" href="">Visit the site</a>
                <p>&nbsp;</p>
@@ -162,14 +162,14 @@ include 'inc_header.php';
                   <img src="http://<?php echo $url; ?>images/content/logo3.png" alt=""/>
                </div>
                <div class="section_content">
-               <h2 class="general_title line_2 clear wow shake animated" data-wow-offset="200">Layan Gerak</h2>
-               <div class="wow tada animated" data-wow-offset="100">
-                  <p>Layan Gerak memberikan layanan pengiriman cepat atas kebutuhan Office Supplies dan kebutuhan perangkat kantor lainnya. 
-                     Office supplies meliputi kertas, alat tulis kantor (ATK), bahan habis pakai (consumables) dan suku cadang personal printer. 
-                     Sementara itu perangkat kantor lainnya meliputi personal printer, personal komputer, notebook beserta jasa purna jualnya. 
-                     Layan Gerak memasarkan produknya melalui Direct Sales, Telesales, Indirect Channel, dan juga Online Shop LayanGerak siap 
-                     menjalankan misinya sebagai One Stop Office Services.</p>
-               </div>
+                  <h2 class="general_title line_2 clear wow shake animated" data-wow-offset="200">Layan Gerak</h2>
+                  <div class="wow tada animated" data-wow-offset="100">
+                     <p>Layan Gerak memberikan layanan pengiriman cepat atas kebutuhan Office Supplies dan kebutuhan perangkat kantor lainnya. 
+                        Office supplies meliputi kertas, alat tulis kantor (ATK), bahan habis pakai (consumables) dan suku cadang personal printer. 
+                        Sementara itu perangkat kantor lainnya meliputi personal printer, personal komputer, notebook beserta jasa purna jualnya. 
+                        Layan Gerak memasarkan produknya melalui Direct Sales, Telesales, Indirect Channel, dan juga Online Shop LayanGerak siap 
+                        menjalankan misinya sebagai One Stop Office Services.</p>
+                  </div>
                </div>
                <a class="more_1 wow bounceInUp animated" data-wow-offset="100" href="">Visit the site</a>
                <p>&nbsp;</p>
@@ -194,13 +194,15 @@ include 'inc_header.php';
                <div class="img wow wobble animated" data-wow-offset="300">
                   <img src="http://<?php echo $url; ?>images/content/logo4.png" alt=""/>
                </div>
-               <h2 class="general_title line_2 wow zoomInRight animated" data-wow-offset="300">Layan Gerak Xpress</h2>
-               <div class="intro wow bounceIn animated" data-wow-offset="300">
-                  <p>Pada 14 Februari 2014 diresmikan unit bisnis baru bernama Layan Gerak Xpress. 
-                     Layan Gerak Xpress mensinergikan armada pengiriman yang sebelumnya telah dimiliki oleh Xprins dan Layan Gerak serta memperluas 
-                     fungsi cabang dan titik pusat layanan purna jual Astragraphia sebagai pick up point Layan Gerak Xpress. Layanan kurir dengan 
-                     jaringan distribusi meliputi : Jakarta, Tangerang, Karawang, Bandung, Yogya, Lampung, Balikpappan, Semarang, Surabaya, 
-                     Makassar, Medan, Manado, Banjarmasin, Palembang, Pekanbaru, Batam, Denpasar, Jayapura.</p>
+               <div class="section_content">
+                  <h2 class="general_title line_2 wow zoomInRight animated" data-wow-offset="300">Layan Gerak Xpress</h2>
+                  <div class="intro wow bounceIn animated" data-wow-offset="300">
+                     <p>Pada 14 Februari 2014 diresmikan unit bisnis baru bernama Layan Gerak Xpress. 
+                        Layan Gerak Xpress mensinergikan armada pengiriman yang sebelumnya telah dimiliki oleh Xprins dan Layan Gerak serta memperluas 
+                        fungsi cabang dan titik pusat layanan purna jual Astragraphia sebagai pick up point Layan Gerak Xpress. Layanan kurir dengan 
+                        jaringan distribusi meliputi : Jakarta, Tangerang, Karawang, Bandung, Yogya, Lampung, Balikpappan, Semarang, Surabaya, 
+                        Makassar, Medan, Manado, Banjarmasin, Palembang, Pekanbaru, Batam, Denpasar, Jayapura.</p>
+                  </div>
                </div>
                <a class="more_1 wow slideInRight animated" data-wow-offset="200" href="">Visit the site</a>
                <p>&nbsp;</p>
@@ -328,16 +330,16 @@ include 'inc_header.php';
          </div>
       </div>
       <div class="wrapper_16">
-         <div class="left">
+         <div class="img_group_people wow slideInRight animated" data-wow-offset="300">
+            <img src="http://<?php echo $url; ?>images/content/girls.png" alt="" />
+         </div>
+         <div class="right">
             <div class="section_title line_1 wow fadeInLeftBig animated" data-wow-offset="300">Grow with us</div>
             <div class="intro wow slideInUp animated" data-wow-offset="200">
                <p>We are always looking for talented people with a passion for client satisfaction to join our collective, see list of our vacancies & drop your resume </p>
             </div>
             <p>&nbsp;</p>
             <a class="more_2 fancybox wow zoomInRight animated" data-wow-offset="300" href="#jobListing">View job listing</a>
-         </div>
-         <div class="img_group_people wow slideInRight animated" data-wow-offset="300">
-            <img src="http://<?php echo $url; ?>images/content/girls.png" alt="" />
          </div>
       </div>
       <?php include 'job_listing.php'; ?>
@@ -356,7 +358,7 @@ include 'inc_header.php';
       <div class="wrapper_16">
          <div class="section_title line_1 wow slideInDown animated" data-wow-offset="200">Contact</div>
          <div class="grid_6 wow bounceInLeft animated" data-wow-offset="200">
-            <div class="semibold">Head Office Address :</div>
+            <div class="semibold text_up">Head Office Address :</div>
             <address>
                KEM Tower Lt. 11<br/>
                Jl. Landasan Pacu Barat,<br/>
@@ -367,17 +369,19 @@ include 'inc_header.php';
                www.axi.co.id
             </address>
          </div>
-         <?php if (!empty($statusForm)) { echo '<div style="margin:0 0 20px 330px;"><div class="subject">', ucfirst($statusForm['status']),'</div><div class="message">',$statusForm['message'],'</div></div>'; } ?>
-         <form id="contactForm" class="form" action="<?php echo $_SERVER['REQUEST_URI'];?>#contactForm" method="POST">
+         <?php if (!empty($statusForm)) {
+            echo '<div style="margin:0 0 20px 330px;"><div class="subject">', ucfirst($statusForm['status']), '</div><div class="message">', $statusForm['message'], '</div></div>';
+         } ?>
+         <form id="contactForm" class="form" action="<?php echo $_SERVER['REQUEST_URI']; ?>#contactForm" method="POST">
             <div class="grid_9">
                <div class="fieldset wow flipInXTwice animated" data-wow-offset="200" data-wow-duration="1s" data-wow-delay="1.5s" data-wow-iteration="4" data-scroll-reveal="enter after .5s">
-                  <input type="text" class="bg_input input_fluid required" value="<?php echo !empty($post_name) ? $post_name : '';?>" placeholder="Your name (required)" name="post_name" />
+                  <input type="text" class="bg_input input_fluid required" value="<?php echo!empty($post_name) ? $post_name : ''; ?>" placeholder="Your name (required)" name="post_name" />
                </div>
                <div class="fieldset wow flipInXTwice animated" data-wow-offset="200" data-wow-duration="1s" data-wow-delay=".5s" data-wow-iteration="4" data-scroll-reveal="enter after .5s">
-                  <input type="text" class="bg_input input_fluid required" value="<?php echo !empty($post_phone) ? $post_phone : '';?>" placeholder="Your phone number (required)" name="post_phone"  />
+                  <input type="text" class="bg_input input_fluid required" value="<?php echo!empty($post_phone) ? $post_phone : ''; ?>" placeholder="Your phone number (required)" name="post_phone"  />
                </div>
                <div class="fieldset wow flipInXTwice animated" data-wow-offset="200" data-wow-duration="1s" data-wow-delay=".2s" data-wow-iteration="4" data-scroll-reveal="enter after .5s">
-                  <input type="text" class="bg_input input_fluid required" value="<?php echo !empty($post_email) ? $post_email : '';?>" placeholder="Your email (required)" name="post_email"  />
+                  <input type="text" class="bg_input input_fluid required" value="<?php echo!empty($post_email) ? $post_email : ''; ?>" placeholder="Your email (required)" name="post_email"  />
                </div>
             </div>
             <div class="grid_9">

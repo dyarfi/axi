@@ -51,7 +51,7 @@ body {
    font-family: 'open_sanslight';
    padding: 16px 20px;
 }
-.input_fluid {max-width: 91%;width: 91%;}
+.input_fluid {max-width: 87%;width: 87%;}
 textarea:focus, input[type="text"]:focus, input[type="password"]:focus, input[type="datetime"]:focus, 
 input[type="datetime-local"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="time"]:focus, 
 input[type="week"]:focus, input[type="number"]:focus, input[type="email"]:focus, input[type="url"]:focus, 
@@ -84,6 +84,7 @@ input[type="search"]:focus, input[type="tel"]:focus, input[type="color"]:focus, 
    /*background: url(../images/material/section_footer.jpg) no-repeat bottom center;*/
    background-color: #f47920;
    height: 200px;
+   overflow: hidden;
    padding-bottom: 46px;
    position:relative;
 }
@@ -109,7 +110,7 @@ section:before, section:after {
 }
 .img_bg img {
    position: relative;
-   left: -48px;
+   left: -28px;
 /*   -moz-transform: translateX(-50%);
    -webkit-transform: translateX(-50%);
    transform: translateX(-50%);*/
@@ -254,19 +255,19 @@ section:before, section:after {
 ---------------------------------------------*/
 #sectionFourth {
    height: 780px;
-   margin-top: -69px;
+   margin-top: -36px;
    overflow: hidden;
    padding-top: 0px;
    z-index: 0;
 }
 #sectionFourth .border_top {
    background: #6B082D;
-   height: 68px;
+   height: 36px;
    position: relative;
-   top: 17px;
-   -webkit-transform: skewY(-1deg);
-   -webkit-transform: skewY(-1deg);
-   transform: skewY(-1deg);
+   top: 1px;
+   -webkit-transform: skewY(-2deg);
+   -webkit-transform: skewY(-2deg);
+   transform: skewY(-2deg);
 }
 #sectionFourth .section_skew {
    background-image: url(../images/content/xprins-2.png);
@@ -286,7 +287,7 @@ section:before, section:after {
    -webkit-transform: skewY(-2deg) !important;
    transform: skewY(-2deg) !important;*/
 }
-#sectionFourth .section_skew img {top: 7px;}
+#sectionFourth .section_skew img {left: -45px;top: 7px;}
 #sectionFourth .wrapper_20 {
    padding: 60px 0;
    position: relative;
@@ -311,17 +312,17 @@ section:before, section:after {
 ---------------------------------------------*/
 #sectionFifth {
    height: 690px;
-   margin-top: -135px;
+   margin-top: -43px;
    overflow: hidden;
    padding-bottom: 107px;
-   padding-top: 66px;
+   padding-top: 0px;
    z-index: 1;
 }
 #sectionFifth .border_top {
    background: #B8D52B;
-   height: 70px;
+   height: 40px;
    position: relative;
-   top: 51px;
+   top: 24px;
    -webkit-transform: skewY(1deg);
    -webkit-transform: skewY(1deg);
    transform: skewY(1deg);
@@ -343,7 +344,11 @@ section:before, section:after {
    -webkit-transform: skewY(-2deg);
    transform: skewY(-2deg);
 }
-#sectionFifth .section_skew .img_bg img {top: 0px;}
+#sectionFifth .img {
+   display: block;
+   width: 220px;
+}
+#sectionFifth .section_skew .img_bg img {left: -50px;top: 0px;}
 #sectionFifth .wrapper_20 {
    padding-top: 6%;
    position: relative;
@@ -365,17 +370,6 @@ section:before, section:after {
    padding-bottom: 78px;
    padding-top: 0px;
    z-index: 1;
-/*   background: #f47920;  Old browsers 
- IE9 SVG, needs conditional override of 'filter' to 'none' 
-background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y0NzkyMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjQ3JSIgc3RvcC1jb2xvcj0iI2I1NDMwZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM2YjA4MmQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-background: -moz-linear-gradient(top,  #f47920 0%, #b5430e 47%, #6b082d 100%);  FF3.6+ 
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f47920), color-stop(47%,#b5430e), color-stop(100%,#6b082d));  Chrome,Safari4+ 
-background: -webkit-linear-gradient(top,  #f47920 0%,#b5430e 47%,#6b082d 100%);  Chrome10+,Safari5.1+ 
-background: -o-linear-gradient(top,  #f47920 0%,#b5430e 47%,#6b082d 100%);  Opera 11.10+ 
-background: -ms-linear-gradient(top,  #f47920 0%,#b5430e 47%,#6b082d 100%);  IE10+ 
-background: linear-gradient(to bottom,  #f47920 0%,#b5430e 47%,#6b082d 100%);  W3C 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', endColorstr='#6b082d',GradientType=0 );  IE6-8 */
-
 }
 #sectionSixth .border_top {
    background: #F47920;
@@ -406,7 +400,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
    -webkit-transform: skewY(3deg);
    transform: skewY(3deg);
 }
-#sectionSixth .section_skew img {top: 10px;}
+#sectionSixth .section_skew img {left: -49px;top: 10px;}
 #sectionSixth .wrapper_20 {
    padding-top: 6%;
    position: relative;
@@ -422,16 +416,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
 ---------------------------------------------*/
 #sectionSeventh {
    height: 980px;
-   margin-top: -163px;
+   margin-top: -50px;
    overflow: hidden;
-   padding-top: 79px;
+   padding-top: 0px;
    z-index: 2; 
 }
 #sectionSeventh .border_top {
    background: #6B082D;
-   height: 50px;
+   height: 38px;
    position: relative;
-   top: 33px;
+   top: 20px;
    -webkit-transform: skewY(1deg);
    -webkit-transform: skewY(1deg);
    transform: skewY(1deg);
@@ -508,6 +502,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
 #sectionEighth {
    height: 670px;
    margin-top: -67px;
+   overflow: hidden;
    z-index: 2;
 }
 #sectionEighth .border_top {
@@ -537,7 +532,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
    position: relative;
    z-index: 1;
 }
-#sectionEighth .left {
+#sectionEighth .right {
    padding-top: 18%;
    width: 50%;
 }
@@ -565,9 +560,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
 #sectionContact {
    background-color: #192f7c;
    height: 500px;
+   overflow: hidden;
 }
 #sectionContact .section_skew {height: 660px;}
-#sectionContact .img_bg img {left: 0px;top: 10px;}
+#sectionContact .img_bg img {left: 0px;top: 100px;}
 #sectionContact .wrapper_16 {
    padding: 100px 0 93px;
    position: relative;
@@ -609,8 +605,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f47920', end
 .fb {background-position: 0 0px;}
 .tw {background-position: -40px 0px;}
 .lk {background-position: -81px 0px;}
-
-
 
 
 

@@ -45,7 +45,8 @@ class Controller_Home extends Controller_Themes_Default {
 										'jquery_function.js',
 										'jquery_alert.js',
 										'jquery_validate.js',
-										'jquery_validate.additional.js'
+										'jquery_validate.additional.js',
+										'jquery.lazyload.min.js'	
 		);
 		
 		$this->template->page_js	= 'window.scrollReveal = new scrollReveal(); var bs_root = "/axi/"; new WOW().init();';

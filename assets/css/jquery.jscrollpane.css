@@ -5,8 +5,8 @@
  * may not operate correctly without them.
  */
 .scroll-pane {
-   width: 100%;
-	height: 735px;
+    width: 100%;
+	/*height: 735px;*/
 	overflow: auto;
 }
 .jspContainer{

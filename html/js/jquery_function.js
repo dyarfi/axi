@@ -1,6 +1,9 @@
 jQuery(document).ready(function($) {
-   //initialise Stellar.js
-   $(window).stellar();
+   //initialise Stellar.js only desktop n tablet
+   var viewPortWidth = $(window).width();
+   if (viewPortWidth > 750)
+      {$(window).stellar();}
+   else {    }
    // Click menu go to section that you want it
    //Cache some variables
     var links = $('.nav').find('li');
@@ -48,9 +51,7 @@ jQuery(document).ready(function($) {
       if ($(this).scrollTop() >= 100) {
          if (!$("#header").hasClass('bg_white')) {
             TweenMax.to($(".container"), 0.01, {
-               css: {
-                  'height': "50px"
-               },
+               css: {'height': "50px"},
                onComplete: function() {
                   $(".navbar-fixed-top").addClass('bg_white');
                   $(".logo_a").fadeOut(10);
@@ -58,7 +59,7 @@ jQuery(document).ready(function($) {
                },
                ease: Cubic.easeIn
             });
-            TweenMax.to($(".navbar-fixed-top"), 0.9, {"backgroundColor": "rgba(255,255,255,0.9)"});
+            TweenMax.to($(".navbar-fixed-top"), 0.2, {"backgroundColor": "rgba(255,255,255,0.9)"});
             TweenMax.to($(".navbar .brand"), 0.3, {"paddingTop": "0", "paddingBottom": 0});
             TweenMax.to($(".navbar .nav"), 0.3,{marginTop: 18});
          }
@@ -67,9 +68,7 @@ jQuery(document).ready(function($) {
          if ($("header .navbar-fixed-top").hasClass('bg_white')) {
             if (!TweenMax.isTweening($(".navbar-fixed-top"))) {
                TweenMax.to($(".container"), 0.01, {
-                  css: {
-                     'height': "138px"
-                  },
+                  css: {'height': "138px"},
                   ease: Cubic.easeOut,
                   onComplete: function() {
                      $(".navbar-fixed-top").removeClass("bg_white");
@@ -85,8 +84,6 @@ jQuery(document).ready(function($) {
       }
    });
    //SLIDE KONTENT
-   if ($.isFunction($.fn.cycle) )
-   {
         $('.axi_caption').cycle({ 
     			fx:     'fade',
     			speed:  1500,
@@ -96,8 +93,6 @@ jQuery(document).ready(function($) {
     			pause:  1,
     			pager:  '#pager'
     		}); 
-   }
-   
    //UNTUK MAP
    function initialize() {
       var myLatlng = new google.maps.LatLng(-6.233128, 106.8653664);
@@ -122,11 +117,6 @@ jQuery(document).ready(function($) {
       transitionIn: 'fade',
       transitionOut: 'fade',
       scrolling: 'no',
-      maxWidth: 800,
-      maxHeight: 1900,
-      minHeight: 700,
-      minWidth: 800,
-      autoHeight: false,
       afterShow: function() {
          $('.scroll-pane').jScrollPane();//SCROLL CUSTOM
       }
@@ -138,8 +128,8 @@ jQuery(document).ready(function($) {
       pagination: false,
       items: 3, //10 items above 1000px browser width
       itemsDesktop: [1000, 3], //5 items between 1000px and 901px
-      itemsDesktopSmall: [900, 3], // betweem 900px and 601px
-      itemsTablet: [899, 2], //2 items between 800 and 0;
+      itemsDesktopSmall: [900, 2], // betweem 900px and 711px
+      itemsTablet: [710, 1], //2 items between 710 and 0;
       itemsMobile: false // itemsMobile disabled - inherit from itemsTablet option
    });
 
@@ -171,3 +161,4 @@ jQuery.extend(jQuery.easing, {
       return false;
    });
 });
+

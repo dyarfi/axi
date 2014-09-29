@@ -260,6 +260,7 @@
    font-family: 'open_sanssemibold';
    font-size: 21px;
 }
+.img_popup_news,.img_popup_news img {width: 100%;}
 /*Retina graphics!*/
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
 	   only screen and (min--moz-device-pixel-ratio: 1.5),
@@ -277,6 +278,6 @@
 }
 .popup {
    line-height: 24px;
-   padding: 49px 0 0px 55px;
+   padding: 49px 40px 0px 40px;
    width: 90%;
 }
