@@ -2,8 +2,7 @@
 <section id="middle">
    <section id="sectionFirst" class="wrapper data_slide" data-slide="1">
       <div class="section_skew">		 
-		 <?php if (is_file($MenuPath.$MenuHomeFile->file_name)) { /* ?>
-		  <div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuHomeFile->file_name));?>)" data-img-width="1920" data-img-height="760"></div> */ ?>
+		 <?php if (!empty($MenuHomeFile) && is_file(@$MenuPath.$MenuHomeFile->file_name)) { ?>
 			<div class="img_bg wow fadeIn animated">
 			   <img src="<?php echo URL::site($MenuUrl.$MenuHomeFile->file_name);?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="10"/>
 			</div>
@@ -33,23 +32,27 @@
    </section><!--  -->
    <section id="sectionSecond" class="wrapper data_slide" data-slide="2">
 		<div class="section_skew">
-		   <?php if (!empty($MenuAxiFile) && is_file($MenuPath.$MenuAxiFile->file_name)) { /* ?>		  
-		  <div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuAxiFile->file_name));?>)" data-img-width="1920" data-img-height="890"></div> */ ?>
+		   <?php if (!empty($MenuAxiFile) && is_file($MenuPath.$MenuAxiFile->file_name)) { ?>
 			<div class="img_bg wow fadeInLeft animated">
 				<img src="<?php echo URL::site($MenuUrl.$MenuAxiFile->file_name);?>" alt="" data-stellar-ratio=".3" data-stellar-horizontal-offset="60"/>
 			</div>
 		  <?php } ?>			 
 		</div>
-		<div class="wrapper_12">		 
+		<div class="wrapper_12">	
+			<?php if(!empty($PageAxi[0]->subject)) { ?>			
 			<h2 class="sc_title line_1 wow bounceIn animated" data-wow-delay="1.5s"><?php echo $PageAxi[0]->subject;?></h2>
+			<?php }
+			if(!empty($PageAxi[0]->text)) { ?>
 			<div class="intro wow zoomInDown animated" data-wow-offset="200"><?php echo $PageAxi[0]->text;?></div>
+			<?php } ?>
 		</div>
    </section><!--  -->
    <section id="sectionThird" class="wrapper data_slide" data-slide="3">
-      <h2 class="general_title line_1 wow slideInLeft animated" data-wow-offset="260"><?php echo $PageAxi[1]->subject;?></h2>
+	   <?php if (!empty($PageAxi[1]->subject)) { ?>
+		<h2 class="general_title line_1 wow slideInLeft animated" data-wow-offset="260"><?php echo $PageAxi[1]->subject;?></h2>
+	   <?php } ?>
       <div class="section_skew">
-		<?php if (!empty($PageAxiFile) && is_file($PagePath.$PageAxiFile->file_name)) { /*?>
-		<div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($PageUrl.str_replace('.', '_resize_1920x760.',$PageAxiFile->file_name));?>)" data-img-width="1280" data-img-height="700"></div> */ ?>
+		<?php if (!empty($PageAxiFile) && is_file($PagePath.$PageAxiFile->file_name)) { ?>
 		  <div class="img_bg wow fadeInDown animated" data-wow-duration="5s" data-wow-offset="200">
             <img src="<?php echo URL::site($PageUrl.$PageAxiFile->file_name);?>" alt="" data-stellar-ratio=".1" data-stellar-horizontal-offset="10"/>
          </div>
@@ -59,6 +62,7 @@
 		  <?php 
 		  $i = 1;
 		  $s = count($Management);
+		  if ($s > 1) {
 		  foreach($Management as $Man) { 
 			  echo ($i % 3 == 0 && $i == 3 && $s > 5) ? '<div id="owl-demo" class="owl-theme">' : '';
 		  ?>
@@ -78,16 +82,16 @@
 		  <?php 
 				echo ($i % $s == 0) ? '' : '';
 				echo ($i == 2) ? '<p class="clear"></p>' :'';			
-		  $i++;
-		  } ?>
+			$i++;
+			} 
+		  }?>
       </div>
       <p class="clear"></p>
    </section><!--  -->
    <section id="sectionFourth" class="wrapper data_slide" data-slide="4">
       <div class="border_top">&nbsp;</div>
       <div class="section_skew">         
-		<?php if (!empty($MenuXprinsFile) && is_file($MenuPath.$MenuXprinsFile->file_name)) { /* ?>               
-		 <div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuXprinsFile->file_name));?>)" data-img-width="1920" data-img-height="760"></div> */ ?>
+		<?php if (!empty($MenuXprinsFile) && is_file($MenuPath.$MenuXprinsFile->file_name)) { ?>
 		  <div class="relative">
             <div class="img_bg">
                <img src="<?php echo URL::site($MenuUrl.$MenuXprinsFile->file_name);?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="60"/>
@@ -98,15 +102,20 @@
       <div class="bg_section">
          <div class="wrapper_20">
             <div class="left">
-				<?php if (!empty($MenuXprinsLogo->file_name) && is_file($MenuPath.$MenuXprinsLogo->file_name)) { ?>					<div class="img wow bounceInLeft animated" data-wow-offset="200">
+				<?php if (!empty($MenuXprinsLogo) && is_file($MenuPath.$MenuXprinsLogo->file_name)) { ?>
+				<div class="img wow bounceInLeft animated" data-wow-offset="200">
 					<img src="<?php echo URL::site($MenuUrl.$MenuXprinsLogo->file_name);?>" alt=""/>
 				</div>
 				<?php } ?>
-               <div class="section_content">				   
+               <div class="section_content">	
+				<?php if (!empty($MenuXprins->name)) { ?>				   
                <h2 class="general_title line_2 wow pulse animated" data-wow-offset="200"><?php echo $MenuXprins->name;?></h2>
+			   <?php } 
+			   if (!empty($MenuXprins->description)) { ?>
                   <div class="intro wow slideInLeft animated" data-wow-offset="200">
                   <?php echo $MenuXprins->description;?>
-               </div>
+				  </div>
+			   <?php } ?>
                </div>
 				<?php if (!empty($MenuXprins->url)) { ?>
 					<a class="more_1 more_a wow zoomInUp animated" data-wow-offset="100" target="_blank" href="<?php echo $MenuXprins->url;?>">Visit the site</a>
@@ -124,8 +133,7 @@
    <section id="sectionFifth" class="wrapper data_slide" data-slide="5">
       <div class="border_top">&nbsp;</div>
       <div class="section_skew">
-		<?php if (!empty($MenuLGFile) && is_file($MenuPath.$MenuLGFile->file_name)) { /* ?>           
-		<div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuLGFile->file_name));?>)" data-img-width="1720" data-img-height="760"></div> */?>
+		<?php if (!empty($MenuLGFile) && is_file($MenuPath.$MenuLGFile->file_name)) { ?>
 		 <div class="relative">
             <div class="img_bg">
                <img src="<?php echo URL::site($MenuUrl.$MenuLGFile->file_name);?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="60"/>
@@ -142,12 +150,16 @@
 				</div>
 				<?php } ?>
                <div class="section_content">
+			   <?php if (!empty($MenuLG->title)) { ?>
                <h2 class="general_title line_2 clear wow shake animated" data-wow-offset="200"><?php echo $MenuLG->title;?></h2>
+			   <?php } 
+			   if (!empty($MenuLG->description)) { ?>               
                <div class="wow tada animated" data-wow-offset="100">
                   <?php echo $MenuLG->description;?>
                </div>
+			   <?php } ?>
                </div>
-				<?php if (!empty($MenuLG->url)) { ?>
+			   <?php if (!empty($MenuLG->url)) { ?>
                <a class="more_1 more_a wow bounceInUp animated" data-wow-offset="100" target="_blank" href="<?php echo $MenuLG->url;?>">Visit the site</a>
                <?php } ?>
 			   <p>&nbsp;</p>	
@@ -162,8 +174,7 @@
    <section id="sectionSixth" class="wrapper data_slide" data-slide="6">
       <div class="border_top">&nbsp;</div>
       <div class="section_skew">
-         <?php if (!empty($MenuLGEFile) && is_file($MenuPath.$MenuLGEFile->file_name)) { /* ?>
-			<div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuLGEFile->file_name));?>)" data-img-width="1920" data-img-height="760"></div> */?>
+         <?php if (!empty($MenuLGEFile) && is_file($MenuPath.$MenuLGEFile->file_name)) { ?>
 		 <div class="relative">
             <div class="img_bg">
                <img src="<?php echo URL::site($MenuUrl.$MenuLGEFile->file_name);?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="60"/>
@@ -178,12 +189,16 @@
 				<div class="img wow wobble animated" data-wow-offset="300">
 					<img src="<?php echo URL::site($MenuUrl.$MenuLGELogo->file_name);?>" alt=""/>
 				</div>
-				<?php } ?>			   
+				<?php } 
+				if (!empty($MenuLGE->title)) { ?>   				
                <h2 class="general_title line_2 wow zoomInRight animated" data-wow-offset="300"><?php echo $MenuLGE->title;?></h2>
+			   <?php } 
+			   if (!empty($MenuLGE->description)) { ?>               
                <div class="intro wow bounceIn animated" data-wow-offset="300">
                   <?php echo $MenuLGE->description;?>
                </div>
-			   <?php if (!empty($MenuLGE->url)) { ?>
+			   <?php } 
+			   if (!empty($MenuLGE->url)) { ?>
                <a class="more_1 more_a wow slideInRight animated" data-wow-offset="200" target="_blank" href="<?php echo $MenuLGE->url;?>">Visit the site</a>
 			   <?php } ?>
 			   <p>&nbsp;</p>
@@ -199,16 +214,16 @@
    <section id="sectionSeventh" class="wrapper data_slide" data-slide="7">
       <div class="border_top">&nbsp;</div>
       <div class="section_skew">
-		<?php if (!empty($MenuNewsFile) && is_file($MenuPath.$MenuNewsFile->file_name)) { /* ?>            
-		 <div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuNewsFile->file_name));?>)" data-img-width="1920" data-img-height="760"></div> */?>
+		<?php if (!empty($MenuNewsFile) && is_file($MenuPath.$MenuNewsFile->file_name)) { ?>
 		<div class="relative"><div class="img_bg"></div></div>
 		<?php } ?> 
       </div>
-      <div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">News & Event</div>
-		<?php 
+	  <?php 
 		$i=0;
 		$g=count($News);
-		?>
+		if ($g > 1) {
+	  ?>
+      <div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">News & Event</div>
 		<div id="<?php echo ($g > 2) ? 'basicCarousel' : 'single_news';?>" class="<?php echo ($g > 2) ? 'owl-carousel owl-theme' : '';?>">	
 		<?php
 		  foreach ($News as $Val) { ?>
@@ -230,13 +245,13 @@
 		  } 
 		  ?>
       </div>
+	  <?php } ?>
       <p class="clear">&nbsp;</p>      
    </section><!--  -->
    <section id="sectionEighth" class="wrapper data_slide" data-slide="8">
       <div class="border_top">&nbsp;</div>
       <div class="section_skew">
-		<?php if (!empty($MenuGrowWuFile) && is_file($MenuPath.$MenuGrowWuFile->file_name)) { /*?>         
-		<div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuGrowWuFile->file_name));?>)" data-img-width="760" data-img-height="400"></div> */?>
+		<?php if (!empty($MenuGrowWuFile) && is_file($MenuPath.$MenuGrowWuFile->file_name)) { ?>
 		  <div class="img_bg">
             <img src="<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuGrowWuFile->file_name));?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="60"/>
          </div>
@@ -247,12 +262,16 @@
             <img src="<?php echo ASSETS; ?>images/content/girls.png" alt="" />
          </div>
          <div class="right">
+			<?php if (!empty($MenuGrowWu->title)) { ?>
             <div class="section_title line_1 wow fadeInLeftBig animated" data-wow-offset="300">
 				<?php echo $MenuGrowWu->title;?>
 			</div>
+			<?php } 
+			if (!empty($MenuGrowWu->description)) { ?>            
             <div class="intro wow slideInUp animated" data-wow-offset="200">
                <?php echo $MenuGrowWu->description;?>
             </div>
+			<?php } ?>
             <p>&nbsp;</p>
             <a class="more_2 wow zoomInRight animated read_vcncy" data-wow-offset="300" href="#jobListing">View job listing</a>
          </div>		  
@@ -265,13 +284,15 @@
 	  <div class="hide">
 		<div id="jobListing" class="popup">
 		   <div class="scroll-pane">
+			<?php if (!empty($Career)) {?>
 			   <?php foreach($Career as $Key) {?>
 			   <div class="append_bottom_3">
 				 <div class="popup_title_2"><?php echo $Key->subject;?></div>
 				 <div>Kualifikasi :</div>
 				 <div><?php echo $Key->requirements;?></div>
 			  </div>
-			   <?php } ?>			    
+			<?php } 			   
+			}?>			    
 		   </div>
 		</div>
 	 </div>	  
@@ -281,8 +302,7 @@
    </section><!--  -->
    <section id="sectionContact" class="wrapper data_slide" data-slide="10">
       <div class="section_skew">
-		<?php if (!empty($MenuGrowWuFile) && is_file($MenuPath.$MenuGrowWuFile->file_name)) { /*?>
-		 <div class="fullscreen background wow fadeIn animated" style="background-image:url(<?php echo URL::site($MenuUrl.str_replace('.', '_resize_1920x760.',$MenuContactFile->file_name));?>)" data-img-width="780" data-img-height="420"></div>*/?>
+		<?php if (!empty($MenuGrowWuFile) && is_file($MenuPath.$MenuGrowWuFile->file_name)) { ?>
 		<div class="img_bg">
             <img src="<?php echo URL::site($MenuUrl.$MenuContactFile->file_name);?>" alt="" data-stellar-ratio=".2" data-stellar-horizontal-offset="10"/>
 		</div>

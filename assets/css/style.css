@@ -191,9 +191,12 @@ section:before, section:after {
 .axi_caption .caption_2 {
    font-size: 48px;
 }
-.axi_caption .caption_2, .caption_2.wow p {
+.axi_caption .caption_2, .axi_caption .caption_2.wow p {
 	line-height: 0.9em !important;
 	font-size: 44px;
+}
+.axi_caption .caption_2.wow p {
+   font-size: 22px !important;
 }
 /* sectionSecond
 ---------------------------------------------*/
