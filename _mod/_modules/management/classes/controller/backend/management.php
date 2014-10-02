@@ -517,17 +517,16 @@ class Controller_Backend_Management extends Controller_Backend_BaseAdmin {
 				$this->request->redirect(ADMIN.$this->_class_name.'/view/'.$this->management->id);
 				return;
 			} else {
-				$fields		= arr::overwrite($fields, $post->as_array());
-				$errors 	= arr::overwrite($errors, $post->errors());
+				$fields		= Arr::overwrite($fields, $post->as_array());
+				$errors 	= Arr::overwrite($errors, $post->errors('validation'));
 				$buffers	= $errors;
-
 				foreach ($errors as $row_key => $row_val) {
-					if ($row_val != '')
-						$buffers[$row_key]	= Lib::config('site.error_field_open').Kohana::lang('validation.'.$errors[$row_key]).Lib::config('site.error_field_close');
-					else
+					if ($row_val != '') {
+						$buffers[$row_key]	= Lib::config('admin.error_field_open').ucfirst($row_val).Lib::config('admin.error_field_close');
+					} else {
 						$buffers[$row_key]	= $row_val;
+					}
 				}
-
 				$errors		= $buffers;
 			}
 		} else {
