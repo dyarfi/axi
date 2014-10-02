@@ -126,7 +126,7 @@ class Controller_Home extends Controller_Themes_Default {
 			$content->$var	= $val;
 		}
 		
-		$this->template->page_title		= 'Home';
+		$this->template->page_title		= 'AXI';
 		$this->template->content		= $content; 
 	}	
 	

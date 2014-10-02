@@ -223,7 +223,7 @@
 		$g=count($News);
 		if ($g > 1) {
 	  ?>
-      <div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">News & Event</div>
+      <div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">Berita</div>
 		<div id="<?php echo ($g > 2) ? 'basicCarousel' : 'single_news';?>" class="<?php echo ($g > 2) ? 'owl-carousel owl-theme' : '';?>">	
 		<?php
 		  foreach ($News as $Val) { ?>
@@ -309,7 +309,7 @@
 		<?php } ?>          
       </div>
       <div class="wrapper_16">
-         <div class="section_title line_1 wow slideInDown animated" data-wow-offset="200">Contact</div>
+         <div class="section_title line_1 wow slideInDown animated" data-wow-offset="200">Kontak</div>
          <div class="grid_6 wow bounceInLeft animated" data-wow-offset="200">
 			 <div class="address_data"><?php echo $Address->value;?></div>
          </div>

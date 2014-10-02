@@ -52,10 +52,10 @@
 			foreach ($statuses as $status) {
 				$arr_status[$status] = ucfirst($status);
 			}			
+			//print_r($arr_status);
 			echo Form::select('status', $arr_status, $fields['status']); 
 		?>
 		<div class="clear ls20"></div>
-		<input type="hidden" name="status" value="publish"/>
 		<div class="bar"></div>
 		<div class="ls10"></div>	
 		<div class="ls10"></div>  
