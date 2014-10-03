@@ -258,9 +258,11 @@
 		<?php } ?>
       </div>
       <div class="wrapper_16">
-		 <div class="img_group_people wow slideInRight animated" data-wow-offset="300">
-            <img src="<?php echo ASSETS; ?>images/content/girls.png" alt="" />
-         </div>
+		  <?php if (!empty($MenuGrowWuLogo) && is_file($MenuPath.$MenuGrowWuLogo->file_name)) { ?>
+			<div class="img_group_people wow slideInRight animated" data-wow-offset="300">
+				<img src="<?php echo URL::site($MenuUrl.$MenuGrowWuLogo->file_name);?>" alt="" />
+			</div>
+		  <?php } ?>        
          <div class="right">
 			<?php if (!empty($MenuGrowWu->title)) { ?>
             <div class="section_title line_1 wow fadeInLeftBig animated" data-wow-offset="300">
