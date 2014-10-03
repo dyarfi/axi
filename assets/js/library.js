@@ -10,11 +10,45 @@ $(window).resize(function() {
 		} else { }		
 	}	
 });
-
+/*
+$('.read_news').on('click',function(e){
+	e.preventDefault();
+	//alert('asdf');
+	$(this).fancybox({
+		type : 'iframe',
+		transitionIn: 'fade',
+		transitionOut: 'fade',
+		scrolling: 'no',
+		afterShow: function() {
+		   $('.scroll-pane').jScrollPane();//SCROLL CUSTOM
+		}
+	 });
+	 return false;
+});
+*/
+$('.read_news').fancybox({
+		type : 'iframe',
+		transitionIn: 'fade',
+		transitionOut: 'fade',
+		scrolling: 'no',
+		afterShow: function() {
+		   //$('.scroll-pane').jScrollPane();//SCROLL CUSTOM
+		}
+	 });
+	 
 $(document).ready(function(){	
 	$('.btn_1, .btn_2, .btn_3, .more_a').click(function(){ window.location = $(this).attr('href'); location.target = "_blank"; });
-	$('.read_news').fancybox();
-	$('.read_vcncy').fancybox();	
+	
+	$('.read_vcncy').fancybox({
+		transitionIn: 'fade',
+		transitionOut: 'fade',
+		scrolling: 'no',
+		afterShow: function() {
+		   $('.scroll-pane').jScrollPane();//SCROLL CUSTOM
+		}
+	 });
+	
+
 	$('.nav li a').click(function() {
 		//alert('foobar');
 		$('.btn.btn-navbar').click();

@@ -142,6 +142,7 @@ if (typeof (google) !== 'undefined') { google.maps.event.addDomListener(window, 
    $('#basicCarousel').owlCarousel({
       navigation: true,
       pagination: false,
+	  mouseDrag:false,
       items: 3, //10 items above 1000px browser width
       itemsDesktop: [1000, 3], //5 items between 1000px and 901px
       itemsDesktopSmall: [900, 2], // betweem 900px and 711px

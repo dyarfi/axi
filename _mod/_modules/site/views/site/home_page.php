@@ -223,7 +223,7 @@
 		$g=count($News);
 		if ($g > 1) {
 	  ?>
-      <div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">Berita</div>
+		<div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">Berita</div>
 		<div id="<?php echo ($g > 2) ? 'basicCarousel' : 'single_news';?>" class="<?php echo ($g > 2) ? 'owl-carousel owl-theme' : '';?>">	
 		<?php
 		  foreach ($News as $Val) { ?>
@@ -237,7 +237,7 @@
                <div class="date"><?php echo date('d F Y', strtotime($Val->news_date));?></div>
                <div class="news_title_home line_1"><?php echo $Val->subject;?></div>
                <div class="intro_news wow "><?php echo $Val->text;?></div>
-               <a class="more_1 fancybox" href="<?php echo URL::site('xhr/read_news/'.$Val->name);?>">Read more</a>			   
+               <a class="more_1 read_news" href="<?php echo URL::site('xhr/read_news/'.$Val->name);?>">Read more</a>			   
             </div>
          </div>
 		  <?php 		  

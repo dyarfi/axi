@@ -645,4 +645,24 @@ section:before, section:after {
    border-radius: 8px;
    border: none;
    }
-
+   
+/** media queries for max-width 640px **/
+@media (max-width: 420px) {
+	#sectionFirst .axi_caption li > div {
+		line-height: 1.2em !important;
+		width: 80% !important;
+	}
+	#sectionFirst .axi_caption li > div p {
+		font-size: 0.8em !important
+	}
+	.axi_caption .caption_2 {
+		font-size: 28px;
+	}
+	.axi_caption .caption_2, .axi_caption .caption_2.wow p {
+		line-height: 1em !important;
+		/*font-size: 20px !important;*/
+	}
+	.axi_caption .caption_2.wow p {
+	   font-size: 14px !important;
+	}
+}

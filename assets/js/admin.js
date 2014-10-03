@@ -809,7 +809,7 @@ $(document).ready(function() {
 		// });
 	// }	
 	// --------------------- imported from kohana 2
-	$('.simpledate').datepicker({dateFormat: 'yy-mm-dd',changeMonth: true,changeYear: true,yearRange: '1900:+0'});
+	$('.simpledate').datepicker({dateFormat: 'yy-mm-dd',changeMonth: true,changeYear: true,yearRange: '1900:+15'});
 	
 	$('#validAfterDatepicker,#validBeforeDatepicker').datepicker({
 		duration: '',
