@@ -64,7 +64,7 @@
 		  $s = count($Management);
 		  if ($s > 1) {
 		  foreach($Management as $Man) { 
-			  echo ($i % 3 == 0 && $i == 3 && $s > 5) ? '<div id="owl-demo" class="owl-theme">' : '';
+			  echo ($i % 3 == 0 && $i == 3 && $s >= 7) ? '<div id="owl-demo" class="owl-theme">' : '';
 		  ?>
 		  	<div class="grid_<?php echo ($i > 2) ? 6 : 12;?>">
 				<div class="center_manage <?php echo ($i == 1) ? 'right' : '';?>">
@@ -224,7 +224,7 @@
 		if ($g > 1) {
 	  ?>
 		<div class="section_title line_1 wow zoomIn animated" data-wow-offset="400">Berita</div>
-		<div id="<?php echo ($g > 2) ? 'basicCarousel' : 'single_news';?>" class="<?php echo ($g > 2) ? 'owl-carousel owl-theme' : '';?>">	
+		<div id="<?php echo ($g > 2) ? 'basicCarousel' : 'single_news';?>" class="<?php echo ($g > 2) ? 'owl-carousel owl-theme' : '';?> news_content">	
 		<?php
 		  foreach ($News as $Val) { ?>
 		  <div class="owl-item wow bounceIn animated" data-wow-offset="500" data-wow-delay=".2s" data-scroll-reveal="enter ease">

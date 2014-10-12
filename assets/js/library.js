@@ -48,6 +48,11 @@ $(document).ready(function(){
 		}
 	 });
 	
+	if ($('.news_content .owl-wrapper').children().size() <= 3) {
+		$('.news_content').find('.owl-buttons').hide();
+	} else {
+		$('.news_content').find('.owl-buttons').show();
+	}
 
 	$('.nav li a').click(function() {
 		//alert('foobar');
